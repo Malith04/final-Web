@@ -81,7 +81,7 @@ nav {
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   gap: 2rem;
 }
 
@@ -94,9 +94,9 @@ nav {
 
 .nav__links {
   list-style: none;
-  display: flex;
+  display:contents;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .link a {
@@ -127,6 +127,91 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
+}
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav__logo {
+  max-width: 100px;
+  border-radius: 200px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 217, 255);
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 75%;
+}
+
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (width < 900px) {
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 95px;
+    right: 1rem;
+    width: auto;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+  .nav__links.active {
+    display: flex;
+  }
 }
 
 .header__container::before {
@@ -566,7 +651,6 @@ nav {
   font-size: 1rem;
   color: var(--secondary-color);
   border: 0.5px solid var(--secondary-color);
-
   transition: 0.3s;
 }
 
@@ -678,5 +762,99 @@ nav {
 
   .footer__bar {
     text-align: center;
+  }
+}
+@media (width < 600px) {
+  .section__header {
+    font-size: 1.75rem; /* Smaller font size for headers */
+  }
+
+  .header__content h1 {
+    font-size: 3rem; /* Smaller font size for main heading */
+    line-height: 4rem;
+  }
+
+  .header__container::before {
+    font-size: 4rem; /* Smaller watermark text */
+    bottom: 3rem;
+    right: 10rem;
+  }
+
+  .explore__grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column for explore cards */
+  }
+
+  .class__image .class__img-1,
+  .class__image .class__img-2 {
+    max-width: 200px; /* Smaller images for class section */
+  }
+
+  .join__grid {
+    bottom: -25rem; /* Adjust join grid position */
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr; /* Single column for footer */
+  }
+
+  .footer__socials {
+    justify-content: center; /* Center social icons */
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .header__content h1 {
+    font-size: 4rem; /* Adjust main heading size */
+    line-height: 5rem;
+  }
+
+  .header__container::before {
+    font-size: 6rem; /* Adjust watermark text */
+    bottom: 4rem;
+    right: 15rem;
+  }
+
+  .explore__grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for explore cards */
+  }
+
+  .class__image .class__img-1 {
+    max-width: 200px; /* Adjust class images */
+  }
+
+  .class__image .class__img-2 {
+    max-width: 300px;
+  }
+
+  .join__grid {
+    bottom: -15rem; /* Adjust join grid position */
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr; /* Two columns for footer */
+  }
+}
+@media (width < 400px) {
+  .btn {
+    padding: 0.75rem 1.5rem; /* Smaller button padding */
+    font-size: 0.9rem;
+  }
+
+  .nav__logo {
+    max-width: 80px; /* Smaller logo */
+  }
+
+  .header__content h1 {
+    font-size: 2.5rem; /* Smaller main heading */
+    line-height: 3.5rem;
+  }
+
+  .header__content h2 {
+    font-size: 1.5rem; /* Smaller subheading */
+  }
+
+  .header__container::before {
+    font-size: 3rem; /* Smaller watermark text */
+    bottom: 2rem;
+    right: 5rem;
   }
 }

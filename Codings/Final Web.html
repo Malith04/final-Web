@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="C:\Users\malit\Desktop\NIBM\Final project web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
+      href="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
     />
     <title>Maxburn | Kandy</title>
     <link rel="icon" href="" />
@@ -20,21 +20,25 @@
       <div class="nav__logo">
         <a href="#">
           <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
+            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
             alt="logo"
           />
         </a>
       </div>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav__links">
         <li class="link"><a href="Register.html">Register</a></li>
         <li class="link"><a href="Login.html">Login</a></li>
         <li class="link"><a href="#">Schedule</a></li>
         <li class="link"><a href="#">Supplement Store</a></li>
-        <li class="link"><a href="#">About</a></li>
-        <li class="link"><a href="#">Contact Us</a></li>
+        <li class="link"><a href="About us.html">About</a></li>
+        <li class="link"><a href="Contact Us.html">Contact Us</a></li>
         <li class="link"><a href="#">Settings</a></li>
       </ul>
-      <button class="btn">Join Now</button>
     </nav>
     <header class="section__container header__container">
       <div class="header__content">
@@ -53,7 +57,7 @@
       </div>
       <div class="header__image">
         <img
-          src="C:\Users\malit\Desktop\NIBM\Final project web\images\Gym 2.avif"
+          src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\Gym 2.avif"
           alt="header"
         />
       </div>
@@ -107,12 +111,12 @@
       <div class="class__image">
         <span class="bg__blur"></span>
         <img
-          src="C:\Users\malit\Desktop\NIBM\Final project web\images\Gym 4.avif"
+          src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\Gym 4.avif"
           alt="class"
           class="class__img-1"
         />
         <img
-          src="C:\Users\malit\Desktop\NIBM\Final project web\images\Gym 3.jpg"
+          src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\Gym 3.jpg"
           alt="class"
           class="class__img-2"
         />
@@ -139,7 +143,7 @@
       </p>
       <div class="join__image">
         <img
-          src="C:\Users\malit\Desktop\NIBM\Final project web\images\Gym 5.jpg"
+          src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\Gym 5.jpg"
           alt="Join"
         />
         <div class="join__grid">
@@ -283,7 +287,7 @@
           <div class="review__footer">
             <div class="review__member">
               <img
-                src="C:\Users\malit\Desktop\NIBM\Final project web\images\AJ Aiya.jpg"
+                src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\AJ Aiya.jpg"
                 alt="member"
               />
               <div class="review__member__details">
@@ -306,7 +310,7 @@
       <div class="footer__col">
         <div class="footer__logo">
           <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
+            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
             alt="logo"
           />
         </div>
@@ -315,9 +319,11 @@
           unbeatable pricing plans. Let's sweat, achieve, and conquer together!
         </p>
         <div class="footer__socials">
-          <a href="https://www.facebook.com/p/MAX-BURN-fitness-centre-100064052262666/">
+          <a
+            href="https://www.facebook.com/p/MAX-BURN-fitness-centre-100064052262666/"
+          >
             <img
-              src="C:\Users\malit\Desktop\NIBM\Final project web\images\fb.jpg"
+              src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\fb.jpg"
               alt="logo"
             />
           </a>
@@ -355,5 +361,13 @@
     <div class="footer__bar">
       Copyright © 2025 AJ Team. All rights reserved.
     </div>
+    <script>
+      const navToggle = document.querySelector(".nav__toggle");
+      const navLinks = document.querySelector(".nav__links");
+    
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
