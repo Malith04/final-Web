@@ -94,7 +94,7 @@ nav {
 
 .nav__links {
   list-style: none;
-  display:contents;
+  display: contents;
   align-items: center;
   gap: 4rem;
 }
@@ -112,7 +112,7 @@ nav {
   width: 0;
   left: 0;
   bottom: 0;
-  background-color:rgb(0, 217, 255);;
+  background-color:rgb(0, 217, 255);
   transition: 0.3s;
 }
 
@@ -642,21 +642,18 @@ nav {
   gap: 0.5rem;
   right: 30px;
   top: 40px;
-  max-width: 150px;
+  max-width: 200px;
  
 }
 
 .footer__socials a {
   padding: 1px 10px;
-  font-size: 1rem;
+  font-size: 3rem;
   color: var(--secondary-color);
-  border: 0.5px solid var(--secondary-color);
   transition: 0.3s;
 }
-
-.footer__socials a:hover {
-  color: white;
-  background-color: red;
+.footer__socials a:hover{
+  transform: translateY(-10px);
 }
 
 .footer__col h4 {
@@ -766,59 +763,59 @@ nav {
 }
 @media (width < 600px) {
   .section__header {
-    font-size: 1.75rem; /* Smaller font size for headers */
+    font-size: 1.75rem;
   }
 
   .header__content h1 {
-    font-size: 3rem; /* Smaller font size for main heading */
+    font-size: 3rem;
     line-height: 4rem;
   }
 
   .header__container::before {
-    font-size: 4rem; /* Smaller watermark text */
+    font-size: 4rem;
     bottom: 3rem;
     right: 10rem;
   }
 
   .explore__grid {
-    grid-template-columns: repeat(1, 1fr); /* Single column for explore cards */
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .class__image .class__img-1,
   .class__image .class__img-2 {
-    max-width: 200px; /* Smaller images for class section */
+    max-width: 200px;
   }
 
   .join__grid {
-    bottom: -25rem; /* Adjust join grid position */
+    bottom: -25rem;
   }
 
   .footer__container {
-    grid-template-columns: 1fr; /* Single column for footer */
+    grid-template-columns: 1fr;
   }
 
   .footer__socials {
-    justify-content: center; /* Center social icons */
+    justify-content: center;
   }
 }
 @media (min-width: 601px) and (max-width: 900px) {
   .header__content h1 {
-    font-size: 4rem; /* Adjust main heading size */
+    font-size: 4rem;
     line-height: 5rem;
   }
 
   .header__container::before {
-    font-size: 6rem; /* Adjust watermark text */
+    font-size: 6rem;
     bottom: 4rem;
     right: 15rem;
   }
 
   .explore__grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for explore cards */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .class__image .class__img-1 {
-    max-width: 200px; /* Adjust class images */
+    max-width: 200px;
   }
 
   .class__image .class__img-2 {
@@ -826,11 +823,11 @@ nav {
   }
 
   .join__grid {
-    bottom: -15rem; /* Adjust join grid position */
+    bottom: -15rem;
   }
 
   .footer__container {
-    grid-template-columns: 1fr 1fr; /* Two columns for footer */
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (width < 400px) {
