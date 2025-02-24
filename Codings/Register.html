@@ -3,28 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
-  <link rel="icon" href="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"/>
+
   <link rel="stylesheet" href="register.css" />
   <title>Register</title>
-  <link
-      rel="icon"
-      href="C:\Users\malit\Desktop\NIBM\Final project web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
-    />
+  <link rel="icon" href="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg">
+  
+</head>
 <body>
-    <header class="section__container header__container">
-        <div class="header__content">
-          <span class="bg__blur"></span>
-          <span class="bg__blur header__blur"></span>
-          <h2><marquee different = "left">You Can Register Now</marquee></h2>
+  <div class="header__content">
+    <span class="bg__blur"></span>
+    <span class="bg__blur header__blur"></span>
+    <h2><marquee different = "left">You Can Register In Here</marquee></h2>
+  </div>
+  <section class="container">
+    <header>Registration Form</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>First Name</label>
+        <input type="text" placeholder="Enter First Name"  required />
+      </div>
+      <div class="input-box">
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Last Name" required />
+      </div>
+      <div class="input-box">
+        <label>Email</label>
+        <input type="text" placeholder="Enter Email" required/>
+      </div>
+      <div class="input-box">
+        <label>Contact Number</label>
+        <input type="text" placeholder="Enter Contact Number" required />
+      </div>
+      <div class="input-box">
+        <label>Password</label>
+        <input type="text" placeholder="Enter Password" required />
+      </div>
+      <div class="input-box">
+        <label>Confirm Password</label>
+        <input type="text" placeholder="Enter Confirm Password" required />
+      </div>
+      <div class="column">
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked/>
+              <label for="check-male">Male</label>
+            </div>
+          </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" checked/>
+              <label for="check-female">Female</label>
+            </div>
+          </div>
+      </div>
+      
+        <div class="input-box">
+          <label>Birthday</label>
+          <input type="Date" placeholder="Enter Birthday" required />
         </div>
-        <div class="header__image">
-          <img src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\Gym 2.avif" alt="header" />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Weight</label>
+          <input type="text" placeholder="Enter Weight" required />
+        <div class="input-box">
+          <label>Height</label>
+          <input type="text" placeholder="Enter Height" required />
         </div>
-      </header>
-      </section>
+        </div>
+      </div>
+      <div class="remember-forget">
+        <label><input type="checkbox"> I agree the terms and conditions</label>
+      </div>
+      <button>Sign Up</button>
+    </form>
+  </section>
 </body>
 </html>

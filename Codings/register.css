@@ -1,158 +1,149 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --primary-color: #292a2c;
-  --primary-color-light:#2d3030;
-  --primary-color-extra-light:red;
-  --secondary-color:blue;
-  --secondary-color-dark:red;
-  --text-light: #d1d5db;
-  --white: #ffffff;
-  --max-width: 1200px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #292a2c;
 }
 
-.section__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: 20px;
 }
 
-.section__header {
-  margin-bottom: 1rem;
-  font-size: 2.25rem;
-  font-weight: 600;
-  text-align: center;
-  color:aqua;
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
 }
 
-.section__subheader {
-  max-width: 100px;
-  margin: auto;
-  text-align: center;
-  color: var(--text-light);
+.container .form{
+    margin-top: 30px;
 }
 
-.btn{
-  padding: 1rem 2rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: var(--secondary-color);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    backdrop-filter: 20px;
+  }
+  
+  .remember-forget label input{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
 }
 
-.btn:hover {
-  background-color: var(--secondary-color-dark);
+.input-box label{
+    color: #333;
 }
 
-img {
-  width: 100%;
-  display: flex;
-  border-radius: 50px;
+.form .input-box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 0 15px;
 }
 
-a {
-  text-decoration: none;
+.form .column{
+    display: flex;
+    column-gap: 15px;
 }
 
-.bg__blur {
-  position: absolute;
-  box-shadow: 0 0 1000px 50px var(--secondary-color);
-  z-index: -1;
+.form .gender-box{
+    margin-top: 20px;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--primary-color);
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
-nav {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
 }
 
-.nav__logo {
-  max-width: 250px;
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
 }
 
-.nav__links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+.form .gender{
+    accent-color: rgb(130, 106, 251);
 }
 
-.link a {
-  position: relative;
-  padding-bottom: 0.75rem;
-  color: var(--white);
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
 }
 
-.link a::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0;
-  left: 0;
-  bottom: 0;
-  background-color:red;
-  transition: 0.3s;
+.gender label{
+    color: #707070;
+}
+.form button{
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: rgb(130, 106, 251);
 }
 
-.link a:hover::after {
-  width: 75%;
+.form button:hover{
+    background-color: rgb(88, 56, 250);
 }
 
-.header__container {
-  position: relative;
-  padding-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2rem;
+@media screen and (max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender){
+        row-gap: 15px;
 }
 
-.header__container::before {
-  content: "Maxburn";
-  position: absolute;
-  bottom: 5rem;
-  right: 22rem;
-  font-size: 8rem;
-  font-weight: 700;
-  line-height: 7rem;
-  color: var(--white);
-  opacity: 0.05;
-  z-index: -1;
 }
-
-.header__blur {
-  bottom: 5rem;
-  right: 0;
-}
-
 .header__content h2 {
-  margin-bottom: 14rem;
-  right: 9px;
-  font-size: 2rem;
-  font-weight: 600;
-  color: red;
-}
-
-.header__content h1 span {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px var(--white);
-}
+    margin-bottom: 14rem;
+    right: 79px;;
+    font-size: 2rem;
+    font-weight: 600;
+    color: red;
+  } 
