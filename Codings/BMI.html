@@ -62,12 +62,10 @@
           alert("Please provide valid inputs for both weight and height.");
         }
       }
-
-      // Attach event listener to the link
       document
         .getElementById("bmi-link")
         .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default action of the link
+          event.preventDefault();
           calculateBMI();
         });
     </script>

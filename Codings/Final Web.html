@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
+      href="final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
     />
     <link
       rel="stylesheet"
@@ -28,7 +28,7 @@
   <body>
     <nav>
       <div class="nav__logo">
-        <a href="#">
+        <a href="Final Web.html">
           <img
             src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
             alt="logo"
@@ -43,11 +43,11 @@
       <ul class="nav__links">
         <li class="link"><a href="Register.html">Register</a></li>
         <li class="link"><a href="Login.html">Login</a></li>
-        <li class="link"><a href="#">Schedule</a></li>
-        <li class="link"><a href="#">Supplement Store</a></li>
+        <li class="link"><a href="schedule.html">Schedule</a></li>
+        <li class="link"><a href="Supplement_Store.html">Supplement Store</a></li>
         <li class="link"><a href="About us.html">About</a></li>
         <li class="link"><a href="Contact Us.html">Contact Us</a></li>
-        <li class="link"><a href="#">Settings</a></li>
+        <li class="link"><a href="Settings.html">Settings</a></li>
       </ul>
     </nav>
     <header class="section__container header__container">
@@ -63,11 +63,13 @@
           "Maxburn". And you can become a stronger and healthier player and get
           a strong and attractive muscular body💪 So JOIN WITH US❗
         </p>
-        <button class="btn">Join With Us</button>
+        <a href="Register.html">
+          <button class="btn">Join With Us</button>
+        </a>
       </div>
       <div class="header__image">
         <img
-          src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\Gym 2.avif"
+          src="images/Gym 3.jpg"
           alt="header"
         />
       </div>
@@ -202,18 +204,19 @@
         <div class="price__card">
           <div class="price__card__content">
             <h4>Daily Plan</h4>
-            <h3>Rs 1800</h3>
+            <h3>Rs 600</h3>
             <p>
               <i class="ri-checkbox-circle-line"></i>
               Teen easy workout plan
             </p>
           </div>
-          <button class="btn price__btn">Join Now</button>
+          <a href="schedule.html" class="btn price__btn">Join Now</a>
         </div>
+
         <div class="price__card">
           <div class="price__card__content">
-            <h4>Basic Plan</h4>
-            <h3>Rs 3000</h3>
+            <h4>Weekly Plan</h4>
+            <h3>Rs 1000</h3>
             <p>
               <i class="ri-checkbox-circle-line"></i>
               Smart workout plan
@@ -223,12 +226,13 @@
               At home workouts
             </p>
           </div>
-          <button class="btn price__btn">Join Now</button>
+          <a href="weekly-plan.html" class="btn price__btn">Join Now</a>
         </div>
+
         <div class="price__card">
           <div class="price__card__content">
-            <h4>Weekly Plan</h4>
-            <h3>Rs 4000</h3>
+            <h4>Monthly Plan</h4>
+            <h3>Rs 3500</h3>
             <p>
               <i class="ri-checkbox-circle-line"></i>
               PRO Gyms
@@ -242,11 +246,12 @@
               At home workouts
             </p>
           </div>
-          <button class="btn price__btn">Join Now</button>
+          <a href="monthly-plan.html" class="btn price__btn">Join Now</a>
         </div>
+
         <div class="price__card">
           <div class="price__card__content">
-            <h4>Monthly Plan</h4>
+            <h4>Yearly Plan</h4>
             <h3>Rs 6000</h3>
             <p>
               <i class="ri-checkbox-circle-line"></i>
@@ -269,7 +274,7 @@
               Personal Training
             </p>
           </div>
-          <button class="btn price__btn">Join Now</button>
+          <a href="yearly-plan.html" class="btn price__btn">Join Now</a>
         </div>
       </div>
     </section>
@@ -343,73 +348,35 @@
               src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\insta.jpg"
               alt="logo"
             />
-            </a
-          >
+          </a>
           <a
             href="https://www.tiktok.com/@max_burn_fitness/video/7440308850198121736"
             ><img
               src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\tiktok.jpg"
               alt="logo"
             />
-            </a
-          >
+          </a>
         </div>
       </div>
       <div class="footer__col">
-        <h4>Company</h4>
-        <a href="#">Business</a>
-        <a href="#">Franchise</a>
-        <a href="#">Partnership</a>
-        <a href="#">Network</a>
-      </div>
-      <div class="footer__col">
-        <h4>About Us</h4>
-        <a href="#">Blogs</a>
+        <h4>About</h4>
         <a href="#">Security</a>
-        <a href="#">Careers</a>
+        <a href="About us.html">About Us</a>
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
-        <a href="#">Contact Us</a>
+        <a href="Contact Us.html">Contact Us</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
         <a href="BMI.html">BMI Calculator</a>
       </div>
     </footer>
     <div class="footer__bar">
-      Copyright © 2025 AJ Team. All rights reserved.
+      Copyright © Maxburn 2025. All rights reserved.
     </div>
-    <script>
-      const navToggle = document.querySelector(".nav__toggle");
-      const navLinks = document.querySelector(".nav__links");
-
-      navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-    <button class="chatbot-toggler">
-      <span class="material-symbols-rounded">mode_comment</span>
-      <span class="material-symbols-outlined">close</span>
-    </button>
-    <div class="chatbot">
-      <header>
-        <h2>Chatbot</h2>
-        <span class="close-btn material-symbols-outlined">close</span>
-      </header>
-      <ul class="chatbox">
-        <li class="chat incoming">
-          <span class="material-symbols-outlined">smart_toy</span>
-          <p>Hi there👋 <br />How can I help you?</p>
-        </li>
-      </ul>
-      <div class="chat-input">
-        <textarea
-          placeholder="Enter a message..."
-          spellcheck="false"
-          required
-        ></textarea>
-        <span id="send-btn" class="material-symbols-rounded">send</span>
-      </div>
-    </div>
+    <script
+      src="//code.tidio.co/270iw5brgqaepyw7j9tva5edjgxytjkc.js"
+      async
+    ></script>
   </body>
 </html>

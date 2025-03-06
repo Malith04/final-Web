@@ -3,9 +3,9 @@
 :root {
   --primary-color: #292a2c;
   --primary-color-light:#2d3030;
-  --primary-color-extra-light:rgb(255, 0, 0);
+  --primary-color-extra-light:rgba(255, 0, 0, 0.781);
   --secondary-color:blue;
-  --secondary-color-dark:rgb(255, 0, 0);
+  --secondary-color-dark:rgba(255, 0, 0, 0.781);
   --text-light: #d1d5db;
   --white: #ffffff;
   --max-width: 1200px;
@@ -90,6 +90,13 @@ nav {
   top: 40px;
   max-width: 100px;
   border-radius: 200px;
+  background: url(../images/ai-generated-gym-with-many-equipments-free-photo.jpg);
+}
+
+.nav__logo {
+  max-width: 100px;
+  border-radius: 200px;
+  box-shadow: 0 0 1px rgb(163, 160, 160);
 }
 
 .nav__links {
@@ -136,11 +143,6 @@ nav {
   align-items: right;
   justify-content: space-between;
   gap: 2rem;
-}
-
-.nav__logo {
-  max-width: 100px;
-  border-radius: 200px;
 }
 
 .nav__links {
@@ -342,6 +344,7 @@ nav {
   border: 1px solid transparent;
   border-radius: 10px;
   transition: 0.2s;
+  box-shadow: 0 0 7px rgb(42, 177, 255);
 }
 
 .explore__card:hover {
@@ -483,6 +486,7 @@ nav {
   border: 2px solid transparent;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0 0 5px rgb(42, 177, 255);
 }
 
 .price__card:hover {
@@ -523,9 +527,10 @@ nav {
 }
 
 .price__btn {
-  color: var(--secondary-color);
+  color:white;
   background-color: transparent;
   border: 2px solid var(--secondary-color);
+  text-align: center;
 }
 
 .price__btn:hover {
@@ -633,6 +638,7 @@ nav {
 
 .footer__col p {
   margin-bottom: 2rem;
+  margin-bottom: 8rem;
   color: var(--text-light);
 }
 
@@ -643,7 +649,6 @@ nav {
   right: 30px;
   top: 40px;
   max-width: 200px;
- 
 }
 
 .footer__socials a {
@@ -667,11 +672,13 @@ nav {
   display: block;
   margin-bottom: 1rem;
   color: var(--text-light);
-  transition: 0.3s;
+  transition: 0.2s;
+  box-shadow: rgb(36, 186, 255);
 }
 
 .footer__col > a:hover {
   color: rgb(0, 204, 255);
+  box-shadow: rgb(36, 186, 255);
 }
 
 .footer__bar {
