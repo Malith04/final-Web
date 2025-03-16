@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Attach to Chrome",
             "port": 9222,
@@ -15,7 +16,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open Final Web.html",
-            "file": "c:\\Users\\malit\\Desktop\\NIBM\\Final project web\\Codings\\Final Web.html"
+            "file": "C:\\Users\\MalithRaja\\OneDrive\\Desktop\\NIBM\\Final project web\final-Web\\CodingsFinal Web.html"
         }
     ]
 }

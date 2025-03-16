@@ -14,7 +14,7 @@ body {
     justify-content: center;
     padding: 25px;
     background-color: #292a2c;
-    background: url(../images/ai-generated-gym-with-many-equipments-free-photo.jpg);
+    background: url(images/ai-generated-gym-with-many-equipments-free-photo.jpg);
     background-size:cover;
     background-position: center;
 
@@ -64,6 +64,8 @@ body {
 .form .input-box {
     width: 100%;
     margin-top: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
 }
 
 .input-box label {

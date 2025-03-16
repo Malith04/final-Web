@@ -10,150 +10,31 @@
       href="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
     />
   </head>
-  <body>
-    <nav>
-        <header>
-            <h1>Supplement Store</h1>
-            <div class="header__image">
-              <img
-                src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\WhatsApp Image 2025-03-05 at 13.27.47_b38ab3b3.jpg"
-                alt="header"
-              />
-            </div>
-            <h2>Our Products</h2>
-          </header>
-    </nav>
-    <main>
-      <section id="products">
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\gold standard.png"
-            alt="Optimum Nutrition Whey Protein"
-          />
-          <h3>Optimum Nutrition Whey Protein</h3>
-          <p>High-quality whey protein for muscle recovery and growth</p>
-          <span class="price">19,500/=</span><br />
-          <span class="Quantity">(2Lbs)</span><br />
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\nitro tech.png"
-            alt="nitro tech"
-          />
-          <h3>Nitro-Tech Whey Protein</h3>
-          <p>
-            Contains whey protein isolates and creatine for better muscle
-            performance.
-          </p>
-          <span class="price"></span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\mass gainer.png"
-            alt="gainer"
-          />
-          <h3>Dymatize Super Mass Gainer</h3>
-          <p>
-            High-calorie mass gainer for individuals looking to build size and
-            strength.
-          </p>
-          <span class="price"></span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\c4 pre.png"
-            alt="C4"
-          />
-          <h3>Cellucor C4 Pre-Workout</h3>
-          <p>
-            A powerful pre-workout formula with caffeine and beta-alanine to
-            boost energy.
-          </p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\BCAA.png"
-            alt="BCAA"
-          />
-          <h3>BPI Sports Best BCAA</h3>
-          <p>Supports muscle recovery and helps prevent muscle breakdown.</p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\MusclePharm.png"
-            alt="MUscle"
-          />
-          <h3>MusclePharm Creatine Monohydrate</h3>
-          <p>Improves strength and endurance during high-intensity workouts.</p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\lipo.png"
-            alt="lipo"
-          />
-          <h3>Nutrex Lipo-6 Black Fat Burner</h3>
-          <p>
-            A thermogenic fat burner that supports weight loss and metabolism.
-          </p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\gnc.png"
-            alt="gnc"
-          />
-          <h3>GNC Mega Men Multivitamin</h3>
-          <p>A daily multivitamin to support overall health and immunity.</p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\fishoil.png"
-            alt="fishoil"
-          />
-          <h3>Omega-3 Fish Oil Capsules</h3>
-          <p>
-            Essential fatty acids that support heart, brain, and joint health.
-          </p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product">
-          <img
-            src="C:\Users\malit\Desktop\NIBM\Final project web\final-Web\images\neocell.png"
-            alt="neocell"
-          />
-          <h3>Neocell Super Collagen + Vitamin C & Biotin</h3>
-          <p>
-            Enhances skin, hair, and nail health by promoting collagen
-            production.
-          </p>
-          <span class="price">4500/=</span>
-          <span class="Quantity">420g</span>
-          
-          <button>Add to Cart</button>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p></p>
-    </footer>
-  </body>
+<body>
+  <div class="header">
+    <p class="logo">Supplement Store</p>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+      <p id="count">0</p>
+    </div>
+  </div>
+  <div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+      <div class="head">
+        <p>My Cart</p>
+      </div>
+      <div id="cartItem">Your cart is empty</div>
+      <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">Rs 0.00</h2>
+      </div>
+    </div>
+  </div>
+  <script src="addtocart.js"></script>
+  <footer>
+    <div class="footer__bar">
+      Copyright © Maxburn 2025. All rights reserved.
+    </div>
+  </footer>
+</body>
 </html>

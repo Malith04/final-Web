@@ -1,15 +1,30 @@
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../images/ai-generated-gym-with-many-equipments-free-photo.jpg);
+    background: url(images/ai-generated-gym-with-many-equipments-free-photo.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #292a2c;
   }
+
+  .header__image {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    margin-bottom: 0;
+}
+
+.header__image img {
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(163, 160, 160);
+}
   
   .wrapper{
     width: 320px;
