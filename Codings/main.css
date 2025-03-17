@@ -487,7 +487,8 @@ nav {
 .class__image .class__img-2 {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom:px;
+  top:-40px;
   max-width: 340px;
   border-radius: 50px;
 }
