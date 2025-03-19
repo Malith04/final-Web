@@ -1,13 +1,13 @@
 const product = [
   {
     id: 0,
-    image: 'images/gold.png',
+    image: 'images/gold standard.png',
     title: 'Gold Protein',
     price: 19500,
   },
   {
     id: 1,
-    image: 'images/nitrotec.png',
+    image: 'images/nitrotech.png',
     title: 'MuscleTech Nitro-Tech Whey Protein',
     price: 23500,
   },

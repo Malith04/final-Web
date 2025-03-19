@@ -776,6 +776,120 @@ nav {
   transition: 0.2s;
 }
 
+.review-list .review-item{
+  background: transparent;
+  background-image:(url(images/ai-generated-gym-with-many-equipments-free-photo.jpg)) ;
+  color:rgb(255, 255, 255);
+  width: 400px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.review-list .review-item .reviewer-image{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  margin-bottom:40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.review-list .review-item .reviewer-agenda{
+  font-size: 1.15rem;
+  color: #ff3300;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.review-list .review-item .next-button{
+    display: flex;
+    padding: 2px 5px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    background: #006eff;
+    transition: 1s;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.63);
+    transform: skewX(-15deg);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .next-button:focus {
+    outline: none;
+  }
+  
+  .next-button:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fbc638;
+  }
+  
+  .next-button .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .next-button:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  .span {
+    transform: skewX(15deg);
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .next-button:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .next-button:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .next-button:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  @keyframes color_anim {
+    0% {
+      fill: rgb(38, 0, 255);
+    }
+  
+    50% {
+      fill: #ff0000;
+    }
+  
+    100% {
+      fill: rgb(38, 0, 255);
+    }
+  }
+
 
 .review__nav span:hover {
   color: rgb(255, 255, 255);
