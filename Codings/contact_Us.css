@@ -9,6 +9,22 @@ body{
     background-color:#292a2c;
 }
 
+.wrapper{
+    width: 620px;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(42, 177, 255);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 100px;
+    backdrop-filter: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    align-items: center; 
+    text-align:center;
+    margin: 60px auto;
+  
+  }
+
 .contact{
     position: relative;
     min-height: 100vh;
@@ -17,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(/images/ai-generated-gym-with-many-equipments-free-photo.jpg);
+    background: url(images/ai-generated-gym-with-many-equipments-free-photo.jpg);
     background-size: cover;
 }
 
@@ -27,13 +43,14 @@ body{
 }
 
 #heading2{
-    font-size: 36px;
+    font-size: 46px;
     font-weight: 500;
     color: #ff0000;
 }
 
 #heading3{
-    font-weight: 300;
+    font-weight: 450;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -82,26 +99,28 @@ body{
     color: #00bcd4;
 }
 
-.contactForm{
+.wrapper-contactForm{
     width: 40%;
     padding: 40px;
-    background: #fff;
+    background: #ffffff;
+
 }
 
-.contactForm h2{
+.wrapper-contactForm h2{
     font-size: 30px;
-    color: #121112;
+    color: #0011ff;
     font-weight: 500;
 }
 
-.contactForm .inputBox{
+.wrapper-contactForm .inputBox{
     position: relative;
     width: 100%;
     margin-top: 10px;
+    color:#ff0000;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
+.wrapper-contactForm .inputBox input,
+.wrapper-contactForm .inputBox textarea{
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -112,7 +131,7 @@ body{
     resize: none;
 }
 
-.contactForm .inputBox span{
+.wrapper-contactForm .inputBox span{
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -123,19 +142,19 @@ body{
     color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span{
+.wrapper-contactForm .inputBox input:focus ~ span,
+.wrapper-contactForm .inputBox input:valid ~ span,
+.wrapper-contactForm .inputBox textarea:focus ~ span,
+.wrapper-contactForm .inputBox textarea:valid ~ span{
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"]{
+.wrapper-contactForm .inputBox input[type="submit"]{
     width: 100px;
     background: #00bcd4;
-    color: #fff;
+    color: #000000;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -156,7 +175,7 @@ body{
         margin-bottom: 40px;
     }
     .container .contactInfo,
-    .contactForm
+    .wrapper-contactForm
     {
         width:100%;
 }

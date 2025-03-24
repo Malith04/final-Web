@@ -131,7 +131,7 @@ body{
 }
 h2{
     font-size: 20px;
-    color: rgb(255, 0, 0);
+    color: rgba(45, 6, 187, 0.695);
 }
 button {
     padding: 0.5rem 0.5rem;
@@ -146,9 +146,24 @@ button {
     transition: 0.2s;
     box-shadow: 0 0 10px rgb(0, 238, 255);
 }
-
 button:hover {
     background:blue;
+}
+.delete-button {
+    padding: 0.49rem 0.49rem;
+    outline: none;
+    border: none;
+    font-size: 0.57rem;
+    color: white;
+    background-color: rgba(255, 127, 67, 0.468);
+    border-radius: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgb(236, 167, 103);
+}
+.delete-button:hover {
+    background:rgba(72, 46, 1, 0.899);
 }
 .cart-item{
     display: flex;
@@ -174,10 +189,7 @@ button:hover {
     max-height: 43px;
     border-radius: 50%;
 }
-.fa-trash:hover {
+.fa-trash:hover{
     cursor: pointer;
-    color:#ffffff;
-}
-.footer__bar{
-    color:white;
+    color:#333;
 }
