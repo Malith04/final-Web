@@ -1,7 +1,7 @@
 const product = [
   {
     id: 0,
-    image: 'images/gold standard.png',
+    image: 'images/gold.png',
     title: 'Gold Protein',
     price: 19500,
   },
