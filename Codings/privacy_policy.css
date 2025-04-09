@@ -1,12 +1,102 @@
 body{
-    margin: 0;
-    padding: 0;
-    background: url(images/young-fitness-man_7502-8747.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    background: url(images/ai-generated-gym-with-many-equipments-free-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.animated-button {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    text-align: center;
+    gap: 4px;
+    padding: 10px 66px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 2px rgb(255, 0, 0);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: rgb(0, 195, 255);
+    z-index: 9;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 174, 255);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(255, 0, 0);
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
 
 .terms-box{
     max-width: 460px;
@@ -14,6 +104,8 @@ body{
     color: #fff;
     font-family: "Montserrat";
     padding: 60px 30px;
+    background: transparent;
+   backdrop-filter: blur(20px);
 }
 
 .terms-text{
@@ -31,7 +123,7 @@ body{
 }
 
 .terms-text::-webkit-scrollbar-thumb{
-    background-color: #d13639;
+    background-color: #00a2ff;
 }
 
 .terms-text h2{
@@ -52,35 +144,43 @@ body{
 }
 
 .terms-box h4 span{
-    color: #d13639;
+    color: #ff0000;
 }
 
 .buttons{
     display: flex;
-    padding: 0 20px;
+    padding: 0 15px;
     justify-content: space-between;
 }
 
-.btn{
-    height: 50px;
-    width: calc(50% - 6px);
-    border: 0;
-    border-radius: 6px;
-    font-size: 19px;
-    font-weight: 500;
-    color: #fff;
-    transition: .3s linear;
-    cursor: pointer;
+.red-btn{
+    margin: 15px auto;
+   padding: 1rem 1rem;
+   background-color: rgb(255, 0, 0);
+   color: white;
+   border: none;
+   border-radius: 14px;
+   cursor: pointer;
+   width: 50%;
+   text-align: center;
 }
 
-.red-btn{
-    background-color: #d13639;
+.red-btn:hover{
+    background-color:blue;
 }
 
 .gray-btn{
-    background-color: #282828;
+    margin: 15px auto;
+   padding: 1rem 1rem;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   border: none;
+   border-radius: 14px;
+   cursor: pointer;
+   width: 50%;
+   text-align: center;
 }
 
-.btn:hover{
-    opacity:.6;
+.gray-btn:hover{
+    background-color: #575555;
 }
