@@ -24,15 +24,17 @@
 }
 
 .section__header {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
   color:aqua;
+  margin-top: 5rem;
 }
 
 .section__subheader {
   max-width: 600px;
+  font-size: 14px;
   margin: auto;
   text-align: center;
   color: var(--text-light);
@@ -177,11 +179,13 @@ nav {
   list-style: none;
   display: contents;
   align-items: center;
-  gap: 4rem;
+  gap: 30rem;
+  font-size: 17px;
+  padding-right: 16rem;
 }
 
 .nav__links {
-  display: none;
+  display:none;
 }
 
 .nav__links.active {
@@ -302,8 +306,8 @@ nav {
 .header__container::before {
   content: "Maxburn";
   position: absolute;
-  bottom: 5rem;
-  right: 22rem;
+  bottom: 0rem;
+  right: 06rem;
   font-size: 8rem;
   font-weight: 700;
   line-height: 7rem;
@@ -1170,3 +1174,104 @@ ul {
     right: 5rem;
   }
 }
+
+/* Base styles — already applied in your CSS (no media query needed) */
+
+/* Tablet (768px and below) */
+@media (width < 768px) {
+  .review-container {
+    padding: 1rem;
+  }
+
+  .review-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .reviewer-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+  }
+
+  .reviewer-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .reviewer-name {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .reviewer-agenda {
+    font-size: 0.9rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; /* hide nav arrows on smaller screens */
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer__logo img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (width < 480px) {
+  .review-container {
+    padding: 0.5rem;
+  }
+
+  .reviewer-content {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .reviewer-name {
+    font-size: 1rem;
+  }
+
+  .reviewer-agenda {
+    font-size: 0.85rem;
+  }
+
+  .footer__logo img {
+    width: 100px;
+  }
+}
+@media (width < 400px) {
+  .review-container {
+    padding: 0.5rem;
+  }
+
+  .reviewer-content {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .reviewer-name {
+    font-size: 1rem;
+  }
+
+  .reviewer-agenda {
+    font-size: 0.85rem;
+  }
+
+  .footer__logo img {
+    width: 100px;
+  }
+}
+

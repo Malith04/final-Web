@@ -106,7 +106,9 @@ body {
   text-decoration: underline;
 }
 
-
+.btn{
+  font-size: 1.1rem;
+}
 .wrapper .btn{
   margin: 15px auto;
   padding: 1rem 1rem;
