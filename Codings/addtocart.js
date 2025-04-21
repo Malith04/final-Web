@@ -86,8 +86,8 @@ function addtocart(a) {
 }
 
 function delElement(a) {
-  cart.splice(a, 1); // Remove the item from the cart
-  displaycart(); // Update the cart display
+  cart.splice(a, 1); 
+  displaycart(); 
 }
 
 function displaycart() {
@@ -100,7 +100,7 @@ function displaycart() {
   } else {
       document.getElementById('cartItem').innerHTML = cart.map((items, index) => {
           var { image, title, price } = items;
-          total += price; // Calculate total price
+          total += price; 
           document.getElementById("total").innerHTML = "Rs " + total + ".00";
           return (
               `<div class='cart-item'>
@@ -113,5 +113,5 @@ function displaycart() {
               </div>`
           );
       }).join('');
-  }
+}
 }

@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"/>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" />
   <link rel="stylesheet" href="register.css" />
   <title>Register</title>
-  <link rel="icon" href="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg">
-  
+  <link rel="icon" href="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg" />
+
+  <style>
+    .loader-wrapper {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
   <div class="header__image">
     <a href="Final Web.html">
     <img
@@ -80,8 +108,40 @@
       <div class="remember-forget">
         <label><input type="checkbox"> I agree the terms and conditions</label>
       </div>
-      <button>Sign Up</button>
+      <a href="Login.html">
+        <button class="animated-button">
+          <svg
+            viewBox="0 0 24 24"
+            class="arr-2"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">Sign Up</span>
+          <span class="circle"></span>
+          <svg
+            viewBox="0 0 24 24"
+            class="arr-1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+        </button>
+      </a>
     </form>
   </section>
+
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader-wrapper");
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.5s ease";
+      setTimeout(() => loader.style.display = "none", 500);
+    });
+  </script>
 </body>
 </html>
