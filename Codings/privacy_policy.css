@@ -126,9 +126,14 @@ body{
     background-color: #00a2ff;
 }
 
-.terms-text h2{
+.terms-text h1{
+    color:yellow;
     text-transform: uppercase;
     text-align: center;
+  }
+
+.terms-text h2{
+  text-align: center;
 }
 
 .terms-box h3{
@@ -184,3 +189,5 @@ body{
 .gray-btn:hover{
     background-color: #575555;
 }
+
+

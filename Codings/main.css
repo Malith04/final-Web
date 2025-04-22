@@ -11,7 +11,7 @@
   --max-width: 1200px;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 * {
@@ -841,6 +841,7 @@ nav {
   margin-bottom: 2rem;
   margin-bottom: 8rem;
   color: var(--text-light);
+  font-size: 14px;
 }
 
 .footer__socials {
@@ -1263,4 +1264,5 @@ ul {
     width: 100px;
   }
 }
+
 
