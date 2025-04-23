@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Fitness Programs | Transform Your Body</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="schedule.css">   
+    <script src="Schedule-script.js" defer></script>    
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    <div class="container">
+        <header class="hero-header">
+            <span class="hero-badge">
+                <i class="fas fa-star"></i>
+                Most Popular Programs
+            </span>
+            <h1 class="section-title">Elite Fitness Transformations</h1>
+            <p class="section-subtitle">Scientifically-proven training systems used by professional athletes and bodybuilders. Select your program and get lifetime access to our training portal.</p>
+        </header>
+
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="card-header">
+                    <span class="card-tag">Beginner</span>
+                    <h3>Foundation Builder</h3>
+                    <span class="price-tag">$97</span>
+                </div>
+                <div class="card-body">
+                    <ul class="plan-features">
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-dumbbell"></i></span>
+                            <div>
+                                <strong>4-Week Program</strong>
+                                <p>Perfect for establishing fundamentals</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-calendar-check"></i></span>
+                            <div>
+                                <strong>5 Workouts/Week</strong>
+                                <p>Full-body focus with active recovery</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-video"></i></span>
+                            <div>
+                                <strong>50+ Video Demonstrations</strong>
+                                <p>Perfect your form with coach guidance</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="showPlan('foundation')">
+                        <i class="fas fa-eye"></i> View Program Details
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="plan-card">
+                <div class="card-header">
+                    <span class="card-tag">Intermediate</span>
+                    <h3>Muscle Architect</h3>
+                    <span class="price-tag">$197</span>
+                </div>
+                <div class="card-body">
+                    <ul class="plan-features">
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-chart-line"></i></span>
+                            <div>
+                                <strong>8-Week Program</strong>
+                                <p>Maximize muscle growth potential</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-fire"></i></span>
+                            <div>
+                                <strong>6 Intense Sessions/Week</strong>
+                                <p>Push/Pull/Legs split with periodization</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-utensils"></i></span>
+                            <div>
+                                <strong>Nutrition Protocol</strong>
+                                <p>Macro calculations & meal timing guide</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="showPlan('hypertrophy')">
+                        <i class="fas fa-eye"></i> View Program Details
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="plan-card">
+                <div class="card-header">
+                    <span class="card-tag">Advanced</span>
+                    <h3>Peak Performance</h3>
+                    <span class="price-tag">$297</span>
+                </div>
+                <div class="card-body">
+                    <ul class="plan-features">
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-trophy"></i></span>
+                            <div>
+                                <strong>12-Week Transformation</strong>
+                                <p>Strength, power & conditioning phases</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-bolt"></i></span>
+                            <div>
+                                <strong>6-7 Sessions/Week</strong>
+                                <p>Competition-level programming</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-headset"></i></span>
+                            <div>
+                                <strong>1-on-1 Coach Access</strong>
+                                <p>Weekly video check-ins included</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="showPlan('elite')">
+                        <i class="fas fa-eye"></i> View Program Details
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="program-modal" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal()" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <div class="modal-header">
+                    <h3 id="modal-title">Program Details</h3>
+                    <p class="modal-subtitle" id="modal-subtitle">Comprehensive training system for maximum results</p>
+                </div>
+                
+                <div class="modal-body" id="modal-body">
+                </div>
+                
+                <div class="modal-footer">
+                    <a href="#checkout" class="modal-cta" id="modal-cta">
+                        <i class="fas fa-lock"></i> Secure Checkout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+      <script>
+        window.addEventListener("load", () => {
+          const loader = document.querySelector(".loader-wrapper");
+          loader.style.opacity = "0";
+          loader.style.transition = "opacity 2s ease";
+          setTimeout(() => loader.style.display = "none", 700);
+        });
+      </script>
+</body>
+</html>

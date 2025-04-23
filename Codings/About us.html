@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="about_Us.css" />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
     <div class="heading">
       <h1>About us</h1>
       <p>
@@ -48,5 +51,13 @@
     <div class="footer__bar">
       Copyright © Maxburn 2025. All rights reserved.
     </div>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader-wrapper");
+        loader.style.opacity = "0";
+        loader.style.transition = "opacity 2s ease";
+        setTimeout(() => loader.style.display = "none", 700);
+      });
+    </script>
   </body>
 </html>

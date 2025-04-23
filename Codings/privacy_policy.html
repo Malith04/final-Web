@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="privacy_policy.css">
     </head>
     <body>
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
       <div class="terms-box">
           <div class="terms-text">
               <h1>Privacy Policy</h1>
@@ -192,5 +195,13 @@
              </a>
           </div>
       </div>
+      <script>
+        window.addEventListener("load", () => {
+          const loader = document.querySelector(".loader-wrapper");
+          loader.style.opacity = "0";
+          loader.style.transition = "opacity 2s ease";
+          setTimeout(() => loader.style.display = "none", 700);
+        });
+      </script>
   </body>
 </html>
