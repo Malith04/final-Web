@@ -1004,6 +1004,7 @@ ul {
 .footer__col h4 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
+  margin-left:50px;
   font-weight: 200;
   color: var(--white);
 }
@@ -1011,6 +1012,7 @@ ul {
 .footer__col > a {
   display: block;
   margin-bottom: 1rem;
+  margin-left:50px;
   font-size: 1rem;
   color: var(--text-light);
   transition: 0.2s;
