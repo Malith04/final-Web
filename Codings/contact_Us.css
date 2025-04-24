@@ -15,10 +15,11 @@ body{
     z-index: 999;
   }
   
-  .header__image img {
+.header__image img {
     max-width: 100px;
     height: auto;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgb(163, 160, 160);
   }
   
 .wrapper{
@@ -177,7 +178,7 @@ body{
     margin: auto;
     padding: 1rem;
     font-size: 0.8rem;
-    color: var(--white);
+    color: white;
   }
 
 @media(max-width: 991px){
@@ -200,7 +201,6 @@ body{
 }
 }
 
- 
 .loader-wrapper {
     position: fixed;
     top: 0; left: 0;

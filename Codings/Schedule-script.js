@@ -1,16 +1,16 @@
 const programs = {
     foundation: {
-        title: "Foundation Builder Program",
-        subtitle: "4-week fundamental training system for beginners",
-        price: "$97",
+        title: "Beginner Workout",
+        subtitle: "2-4-week training system for beginners",
+        price: "Rs 2500.00",
         phases: [
             {
-                title: "Movement Mastery (Week 1-2)",
+                title: "Advanced Movement Skills (Week 2-4)",
                 icon: "fa-running",
                 description: "Learn proper movement patterns and establish neuromuscular connections",
                 days: [
                     {
-                        title: "Day 1: Full Body Strength",
+                        title: "Full Body Strength",
                         exercises: [
                             { name: "Goblet Squats", sets: "3-4", reps: "8-10", notes: "Tempo 3-0-1" },
                             { name: "Bench Press", sets: "3", reps: "8-10", notes: "Pause at bottom" },
@@ -19,7 +19,7 @@ const programs = {
                         ]
                     },
                     {
-                        title: "Day 2: Mobility & Core",
+                        title: "Home Workout",
                         exercises: [
                             { name: "Bodyweight Lunges", sets: "3", reps: "10/side" },
                             { name: "TRX Rows", sets: "3", reps: "10-12" },
@@ -30,12 +30,12 @@ const programs = {
                 ]
             },
             {
-                title: "Strength Accumulation (Week 3-4)",
+                title: "Strength Upgrading (Week 2-4)",
                 icon: "fa-dumbbell",
                 description: "Build foundational strength with progressive overload",
                 days: [
                     {
-                        title: "Day 1: Lower Body Focus",
+                        title: "Lower Body Focus",
                         exercises: [
                             { name: "Barbell Squats", sets: "4", reps: "6-8" },
                             { name: "Romanian Deadlifts", sets: "3", reps: "8-10" },
@@ -48,23 +48,23 @@ const programs = {
         ],
         notes: [
             "Perform dynamic warm-up before each session",
-            "Rest 60-90 seconds between sets",
+            "Rest 30-60 seconds between sets",
             "Increase weight by 2.5-5lbs each week when possible",
             "Record all workouts in provided tracking sheet"
         ]
     },
     hypertrophy: {
-        title: "Muscle Architect Program",
-        subtitle: "8-week hypertrophy-focused training system",
-        price: "$197",
+        title: "Muscle Architect Workouts",
+        subtitle: "8-week hypertrophy-focused training system for intermediates",
+        price: "Rs 2800.00",
         phases: [
             {
-                title: "Volume Accumulation (Week 1-4)",
+                title: "Volume Upgrader (Week 4-6)",
                 icon: "fa-layer-group",
                 description: "High volume phase to stimulate muscle growth",
                 days: [
                     {
-                        title: "Day 1: Chest & Triceps",
+                        title: "Chest & Triceps",
                         exercises: [
                             { name: "Incline Barbell Press", sets: "4", reps: "8-10" },
                             { name: "Dumbbell Flyes", sets: "3", reps: "10-12" },
@@ -73,7 +73,7 @@ const programs = {
                         ]
                     },
                     {
-                        title: "Day 2: Back & Biceps",
+                        title: "Back & Biceps",
                         exercises: [
                             { name: "Pull-ups", sets: "4", reps: "6-8" },
                             { name: "Bent-over Rows", sets: "3", reps: "8-10" },
@@ -84,12 +84,12 @@ const programs = {
                 ]
             },
             {
-                title: "Intensification (Week 5-8)",
+                title: "Build-Up Workouts (Week 4-6)",
                 icon: "fa-fire",
                 description: "Increase intensity with advanced techniques",
                 days: [
                     {
-                        title: "Day 1: Chest & Triceps (Dropsets)",
+                        title: "Chest & Triceps (Dropsets)",
                         exercises: [
                             { name: "Flat Bench Press", sets: "4", reps: "6-8" },
                             { name: "Incline DB Press", sets: "3", reps: "8-10 + dropset" },
@@ -109,15 +109,15 @@ const programs = {
     elite: {
         title: "Peak Performance Program",
         subtitle: "12-week competition prep training system",
-        price: "$297",
+        price: "Rs 3500.00",
         phases: [
             {
-                title: "Strength Phase (Week 1-4)",
+                title: "Strength Phase (Week 9-12)",
                 icon: "fa-weight-hanging",
                 description: "Maximize strength with heavy compound lifts",
                 days: [
                     {
-                        title: "Day 1: Max Effort Lower",
+                        title: "Max Effort Lower",
                         exercises: [
                             { name: "Back Squats", sets: "5", reps: "5 @85% 1RM" },
                             { name: "Front Squats", sets: "3", reps: "5" },
@@ -125,7 +125,7 @@ const programs = {
                         ]
                     },
                     {
-                        title: "Day 2: Dynamic Effort Upper",
+                        title: "Dynamic Effort Upper",
                         exercises: [
                             { name: "Bench Press (Speed)", sets: "8", reps: "3 @60% 1RM" },
                             { name: "Weighted Pull-ups", sets: "5", reps: "5" },
@@ -140,7 +140,7 @@ const programs = {
                 description: "Peak strength and competition preparation",
                 days: [
                     {
-                        title: "Day 1: Competition Squat",
+                        title: "Competition Squat",
                         exercises: [
                             { name: "Squats (Singles)", sets: "5", reps: "1 @90-95% 1RM" },
                             { name: "Paused Squats", sets: "3", reps: "3 @70%" }
@@ -172,7 +172,7 @@ function showPlan(programKey) {
 
     let content = `
         <div class="program-description" style="margin-bottom: 3rem;">
-            <p style="font-size: 1.1rem; line-height: 1.7; color: var(--dark);">${program.subtitle}. This program was designed by our team of professional strength coaches to deliver maximum results through scientifically-proven training methodologies.</p>
+            <p style="font-size: 1.1rem; line-height: 1.7; color: var(--light);">${program.subtitle}. This program was designed by our team of professional strength coaches to deliver maximum results through scientifically-proven training methodologies.</p>
         </div>
     `;
 

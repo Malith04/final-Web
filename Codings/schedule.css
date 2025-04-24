@@ -1,5 +1,6 @@
 :root {
     --primary: #3b82f6;
+    --primary-color: #292a2c;
     --primary-dark: #2563eb;
     --primary-light: #93c5fd;
     --secondary: #f59e0b;
@@ -12,7 +13,7 @@
     --gray: #94a3b8;
     --gray-light: #e2e8f0;
     --success: #10b981;
-    --danger: #ef4444;
+    --danger: #ff0000;
     
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
     --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
@@ -35,8 +36,8 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--primary-color);
+    color: black;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -57,8 +58,7 @@ h1, h2, h3, h4 {
 .section-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
+    background: rgb(0, 255, 255);
     background-clip: text;
     color: transparent;
     position: relative;
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
     bottom: -8px;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: rgb(255, 255, 255);
     border-radius: 2px;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
 }
 
 .plan-card {
-    background: var(--lighter);
+    background:transparent;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
@@ -132,7 +132,7 @@ h1, h2, h3, h4 {
 
 .card-header {
     padding: 2rem;
-    background: linear-gradient(135deg, var(--dark), var(--darker));
+    background: linear-gradient(700deg, rgb(0, 0, 0), rgba(1, 255, 255, 0.616));
     color: white;
     position: relative;
     overflow: hidden;
@@ -199,6 +199,7 @@ h1, h2, h3, h4 {
     align-items: flex-start;
     gap: 1rem;
     border-bottom: 1px dashed var(--gray-light);
+    color:white
 }
 
 .plan-features li:last-child {
@@ -278,7 +279,7 @@ h1, h2, h3, h4 {
 }
 
 .modal-content {
-    background: white;
+    background: var(--primary-color);
     margin: 2rem auto;
     padding: 3rem;
     border-radius: var(--radius-lg);
@@ -327,16 +328,17 @@ h1, h2, h3, h4 {
 .modal-header {
     margin-bottom: 2rem;
     text-align: center;
+    color:rgb(255, 255, 255);
 }
 
 .modal-header h3 {
     font-size: 2rem;
-    color: var(--dark);
+    color: var(--light);
     margin-bottom: 1rem;
 }
 
 .modal-subtitle {
-    color: var(--gray);
+    color: var(--light);
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
 }
@@ -349,7 +351,7 @@ h1, h2, h3, h4 {
 
 .program-phase {
     margin-bottom: 3rem;
-    background: var(--light);
+    background: var(--primary-color);
     border-radius: var(--radius-md);
     padding: 1.5rem;
     box-shadow: var(--shadow-sm);
@@ -379,7 +381,7 @@ h1, h2, h3, h4 {
 
 .phase-title {
     font-size: 1.5rem;
-    color: var(--dark);
+    color: var(--light);
 }
 
 .phase-duration {
@@ -408,7 +410,7 @@ h1, h2, h3, h4 {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    background: white;
+    background: rgb(207, 196, 196);
     border-radius: var(--radius-sm);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
@@ -445,13 +447,13 @@ h1, h2, h3, h4 {
 }
 
 .exercise-sets {
-    color: var(--primary);
+    color: rgb(0, 60, 255);
     font-weight: 700;
 }
 
 .program-notes {
     margin-top: 3rem;
-    background: rgba(16, 185, 129, 0.05);
+    background: rgb(199, 190, 190);
     border-radius: var(--radius-md);
     padding: 1.5rem;
     border-left: 4px solid var(--success);
@@ -493,7 +495,7 @@ h1, h2, h3, h4 {
     align-items: center;
     gap: 0.75rem;
     background: linear-gradient(90deg, var(--secondary), var(--secondary-dark));
-    color: var(--darker);
+    color: var(--light);
     padding: 1rem 2.5rem;
     border-radius: 100px;
     font-weight: 700;
