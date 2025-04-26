@@ -44,7 +44,9 @@
           />
         </a>
       </div>
-      <ul class="nav__links">
+      <button class="burger-menu" id="burgerBtn">
+        <i class="ri-menu-line"></i>
+      </button>      <ul class="nav__links" id="navLinks">
         <li class="link"><a href="Register.html">Register</a></li>
         <li class="link"><a href="Login.html">Login</a></li>
         <li class="link"><a href="Schedule.html">Schedule</a></li>
@@ -553,6 +555,17 @@
       Copyright © Maxburn 2025. All rights reserved.
     </div>
     <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      const burgerBtn = document.getElementById("burgerBtn");
+      const navLinks = document.getElementById("navLinks");
+
+      burgerBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      burgerBtn.classList.toggle("active");
+  });
+});
+    </script>
+    <script>
       (function () {
         if (!window.chatbase || window.chatbase("getState") !== "initialized") {
           window.chatbase = (...arguments) => {
@@ -590,7 +603,7 @@
       const navLinks = document.querySelector(".nav__links");
 
       toggleButton.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
+      nav__links.classList.toggle("active");
       });
      });
     </script>
