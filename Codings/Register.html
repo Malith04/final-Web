@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="register.css" />
   <title>Register</title>
   <link rel="icon" href="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg" />
+  <script type="module" src="register.js" defer></script>
 </head>
 <body>
   <div class="loader-wrapper">
@@ -25,27 +26,27 @@
     <form action="#" class="form">
       <div class="input-box">
         <label>First Name</label>
-        <input type="text" placeholder="Enter First Name"  required />
+        <input type="text" id ="f_name" placeholder="Enter First Name"  required />
       </div>
       <div class="input-box">
         <label>Last Name</label>
-        <input type="text" placeholder="Enter Last Name" required />
+        <input type="text" id ="l_name" placeholder="Enter Last Name" required />
       </div>
       <div class="input-box">
         <label>Email</label>
-        <input type="text" placeholder="Enter Email" required/>
+        <input type="text" id ="email" placeholder="Enter Email" required/>
       </div>
       <div class="input-box">
         <label>Contact Number</label>
-        <input type="text" placeholder="Enter Contact Number" required />
+        <input type="text" id ="c_no" placeholder="Enter Contact Number" required />
       </div>
       <div class="input-box">
         <label>Password</label>
-        <input type="text" placeholder="Enter Password" required />
+        <input type="text" id ="password" placeholder="Enter Password" required />
       </div>
       <div class="input-box">
         <label>Confirm Password</label>
-        <input type="text" placeholder="Enter Confirm Password" required />
+        <input type="text" id ="c_password" placeholder="Enter Confirm Password" required />
       </div>
       <div class="column">
         <div class="gender-box">
@@ -65,16 +66,16 @@
       
         <div class="input-box">
           <label>Birthday</label>
-          <input type="Date" placeholder="Enter Birthday" required />
+          <input type="Date" id ="b_day" placeholder="Enter Birthday" required />
         </div>
       </div>
       <div class="column">
         <div class="input-box">
           <label>Weight</label>
-          <input type="text" placeholder="Enter Weight" required />
+          <input type="text" id ="weight" placeholder="Enter Weight" required />
         <div class="input-box">
           <label>Height</label>
-          <input type="text" placeholder="Enter Height" required />
+          <input type="text" id ="height" placeholder="Enter Height" required />
         </div>
         </div>
       </div>
@@ -82,7 +83,7 @@
         <label><input type="checkbox"> I agree the terms and conditions</label>
       </div>
       <a href="Login.html">
-        <button class="animated-button">
+        <button class="animated-button" id="sign_up">
           <svg
             viewBox="0 0 24 24"
             class="arr-2"
