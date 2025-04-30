@@ -96,10 +96,24 @@ body{
     height: 220px;
     opacity: 1;
   }
+  .header__image {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    margin-bottom: 0;
+  }
+  
+  .header__image img {
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(163, 160, 160);
+  }
   
 
 .terms-box{
     max-width: 460px;
+    margin-top: 80px;
+    margin-bottom: 50px;
     background-color: #111;
     color: #fff;
     font-family: "Montserrat";

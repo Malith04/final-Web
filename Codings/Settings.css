@@ -72,16 +72,19 @@ h1 {
     margin-bottom: 5px;
     font-size: 18px;
     color:white;
+    
 }
 
-.settings-section input[type="text"],
-.settings-section input[type="email"] {
+.settings-section input[type="email"],
+.settings-section input[type="password"] 
+.settings-section input[type="text"]{
     width: 100%;
     padding: 10px;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-right: 8rem;
     border: 1px solid #5f5c5c;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 .settings-section {
     display: flex;
@@ -100,7 +103,7 @@ h1 {
     border: none;
     border-radius: 14px;
     cursor: pointer;
-    width: 60%;
+    width: 80%;
     text-align: center;
 }
 

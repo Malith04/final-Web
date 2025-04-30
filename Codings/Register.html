@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="register.css" />
   <title>Register</title>
   <link rel="icon" href="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg" />
-  <script type="module" src="register.js" defer></script>
+  <script src="Script1.js"></script>
+  <script type="module" src="register.js"></script>
 </head>
 <body>
   <div class="loader-wrapper">
@@ -24,66 +25,29 @@
   <section class="container">
     <header>Registration Form</header>
     <form action="#" class="form">
-      <div class="input-box">
-        <label>First Name</label>
-        <input type="text" id ="f_name" placeholder="Enter First Name"  required />
-      </div>
-      <div class="input-box">
-        <label>Last Name</label>
-        <input type="text" id ="l_name" placeholder="Enter Last Name" required />
-      </div>
-      <div class="input-box">
-        <label>Email</label>
-        <input type="text" id ="email" placeholder="Enter Email" required/>
-      </div>
-      <div class="input-box">
-        <label>Contact Number</label>
-        <input type="text" id ="c_no" placeholder="Enter Contact Number" required />
-      </div>
-      <div class="input-box">
-        <label>Password</label>
-        <input type="text" id ="password" placeholder="Enter Password" required />
-      </div>
-      <div class="input-box">
-        <label>Confirm Password</label>
-        <input type="text" id ="c_password" placeholder="Enter Confirm Password" required />
-      </div>
-      <div class="column">
-        <div class="gender-box">
-          <h3>Gender</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked/>
-              <label for="check-male">Male</label>
-            </div>
-          </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" checked/>
-              <label for="check-female">Female</label>
-            </div>
-          </div>
-      </div>
-      
-        <div class="input-box">
-          <label>Birthday</label>
-          <input type="Date" id ="b_day" placeholder="Enter Birthday" required />
+      <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <label for="fname">First Name</label>
+           <input type="text"  id="fName" placeholder="First Name" required>
         </div>
-      </div>
-      <div class="column">
-        <div class="input-box">
-          <label>Weight</label>
-          <input type="text" id ="weight" placeholder="Enter Weight" required />
-        <div class="input-box">
-          <label>Height</label>
-          <input type="text" id ="height" placeholder="Enter Height" required />
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <label for="lName">Last Name</label>
+            <input type="text"  id="lName" placeholder="Last Name" required>
         </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <label for="email">Email</label>
+            <input type="email"  id="email" placeholder="Email" required>
         </div>
-      </div>
-      <div class="remember-forget">
-        <label><input type="checkbox"> I agree the terms and conditions</label>
-      </div>
-      <a href="Login.html">
-        <button class="animated-button" id="sign_up">
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <label for="password">Password</label>
+            <input type="password" id="password"  placeholder="Password" required>
+        </div>
+       <a href="Login.html">
+        <button class="animated-button" id="submitSignUp">
           <svg
             viewBox="0 0 24 24"
             class="arr-2"
@@ -93,7 +57,7 @@
               d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
             ></path>
           </svg>
-          <span class="text">Sign Up</span>
+          <span class="text"> Register Now </span>
           <span class="circle"></span>
           <svg
             viewBox="0 0 24 24"
@@ -106,12 +70,13 @@
           </svg>
         </button>
       </a>
-      <div class="login-link">
-        <p>Already have an account?
-          <a href="Login.html">Login</a>
-        </p>
-      </div>
     </form>
+    <a href="Login.html">
+      <div class="links">
+       <p>Already Have Account ?</p>
+       <button id="signInButton">Sign In</button>
+     </div>
+    </a>
   </section>
 
   <script>

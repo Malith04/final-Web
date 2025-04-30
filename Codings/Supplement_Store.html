@@ -11,11 +11,24 @@
     />
   </head>
 <body>
+  <div id="alertOverlay" style="display:none;" class="overlay">
+    <div id="alertMessage" class="message">
+        <h2>You must be logged in to access this page</h2>
+        <p>Please log in to continue.</p>
+    </div>
+</div>
+
+<div id="pageContent" style="display:none;">
+
+  <h1>Welcome to the Supplement Store</h1>
+    <p>Browse and shop our supplements.</p>
+    
+</div>
   <div class="loader-wrapper">
     <div class="loader"></div>
   </div>
   <div class="header__image">
-    <a href="Final Web.html">
+    <a href="FinalWeb.html">
     <img
       src="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
       alt="header"
@@ -55,5 +68,6 @@
       setTimeout(() => loader.style.display = "none", 700);
     });
   </script>
+  <script src="supplement.js"></script>
 </body>
 </html>

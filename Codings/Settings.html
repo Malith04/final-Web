@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <div class="header__image">
-      <a href="Final Web.html">
-      <img
-        src="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg"
-        alt="header"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="Settings.css" />
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <div class="header__image">
+    <a href="FinalWeb.html">
+      <img src="images/WhatsApp Image 2025-02-17 at 14.01.56_d141e72c.jpg" alt="header" />
     </a>
+  </div>
+
+  <div class="container">
+    <h1>Settings</h1>
+
+    <div class="settings-section">
+      <h2>Edit Profile</h2>
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="loggedUserFName" placeholder="First Name" required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="loggedUserLName" placeholder="Last Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+      </form>
     </div>
-    <title>Settings</title>
-    <link rel="stylesheet" href="Settings.css" />
-  </head>
-  <body>
-    <div class="loader-wrapper">
-      <div class="loader"></div>
+
+    <div class="settings-section">
+      <h2>Account Actions</h2>
+      <button id="logout" class="action-button">Log Out</button>
+      <button id="delete" class="action-button">Delete Account</button>
     </div>
-    <div class="container">
-      <h1>Settings</h1>
-      <div class="settings-section">
-        <h2>Edit Profile</h2>
-        <form>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <input type="submit" value="Save Changes" />
-        </form>
-      </div>
-      <div class="settings-section">
-        <h2>Payment Method</h2>
-        <form>
-          <label for="card-number">Card Number:</label>
-          <input type="text" id="card-number" name="card-number" required />
-          <label for="expiry-date">Expiry Date:</label>
-          <input type="text" id="expiry-date" name="expiry-date" required />
-          <label for="cvv">CVV:</label>
-          <input type="text" id="cvv" name="cvv" required />
-          <input type="submit" value="Update Payment Method" />
-        </form>
-      </div>
-      <div class="settings-section">
-        <h2>Account Actions</h2>
-        <button class="action-button">Log Out</button>
-        <button class="action-button">Delete Account</button>
-      </div>
-    </div>
-    <div class="footer__bar">
-      Copyright © Maxburn 2025. All rights reserved.
-    </div>
-    <script>
-      window.addEventListener("load", () => {
-        const loader = document.querySelector(".loader-wrapper");
-        loader.style.opacity = "0";
-        loader.style.transition = "opacity 2s ease";
-        setTimeout(() => loader.style.display = "none", 700);
-      });
+  </div>
+
+  <div class="footer__bar">
+    Copyright © Maxburn 2025. All rights reserved.
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader-wrapper");
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 2s ease";
+      setTimeout(() => loader.style.display = "none", 700);
+    });
   </script>
-  </body>
+</body>
 </html>

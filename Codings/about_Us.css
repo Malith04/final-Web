@@ -45,6 +45,19 @@ body{
     margin-top: 25px;
 }
 
+.header__image {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    margin-bottom: 0;
+  }
+  
+  .header__image img {
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(163, 160, 160);
+  }
+
 .container{
     width: 90%;
     margin: 0 auto;
