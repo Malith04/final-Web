@@ -2,7 +2,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/fireba
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
 
-// Firebase config
 const firebaseConfig = {  
     apiKey: "AIzaSyBLocBhgzRruoPsTAIhEq0JChJTm3Nwbj0",
     authDomain: "maxburn-gym-be018.firebaseapp.com",
@@ -14,7 +13,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// Show Message Function
 function showMessage(message, divId){
     var messageDiv = document.getElementById(divId);
     messageDiv.style.display = "block";
@@ -25,7 +23,6 @@ function showMessage(message, divId){
     }, 5000);
 }
 
-// Register user
 const signUp = document.getElementById('submitSignUp');
 signUp.addEventListener('click', (event) => {
     event.preventDefault();
@@ -51,7 +48,7 @@ signUp.addEventListener('click', (event) => {
         const docRef = doc(db, "users", user.uid);
         setDoc(docRef, userData)
         .then(() => {
-            window.location.href = 'Login.html'; // Redirect to login page
+            window.location.href = 'Login.html'; 
         })
         .catch((error) => {
             console.error("Error writing document", error);

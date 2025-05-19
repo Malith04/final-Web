@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script type="module" src="login.js"></script>
     <script src="Script1.js"></script>
+    <script src="log_script.js"></script>
 </head>
 <body>
   <div class="loader-wrapper">
@@ -33,9 +34,10 @@
         <i class='bx bxs-lock-alt' id="togglePassword" style="cursor:pointer;"></i>
       </div>
       <div class="remember-forget">
-        <label><input type="checkbox"> Show Password</label>
-        <a href="#">Forget password?</a>
+          <label><input type="checkbox" id="showPasswordCheckbox"> Show Password</label>
+          <a href="#">Forget password?</a>
       </div>
+
       <button class="animated-button" id="submitSignIn">
         <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
           <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -49,9 +51,9 @@
     </form>
     <a href="Register.html">
       <div class="links">
-        <p>Don't have an account yet? </p>
-        <button id="signUpButton">  Sign Up</button>
+        <p>Don't have an account yet?</p>
       </div>
+      <button id="signUpButton"> Sign Up</button>
     </a>
   </div>
   <div class="footer__bar">
@@ -65,5 +67,23 @@
       setTimeout(() => loader.style.display = "none", 500);
     });
   </script>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader-wrapper");
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.5s ease";
+      setTimeout(() => loader.style.display = "none", 500);
+    });
+  
+    document.getElementById("showPasswordCheckbox").addEventListener("change", function () {
+      const passwordInput = document.getElementById("password");
+      if (this.checked) {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    });
+  </script>
+  
 </body>
 </html>

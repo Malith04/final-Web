@@ -22,7 +22,7 @@ function showMessage(message, divId) {
     messageDiv.style.opacity = 1;
     setTimeout(function() {
         messageDiv.style.opacity = 0;
-    }, 5000);
+    }, 9000);
 }
 
 const signInButton = document.getElementById("submitSignIn");
